@@ -1,13 +1,11 @@
 <?php
-
-namespace View\Dashboard;
+namespace View\Custumer;
 
 use View\View;
-use Others\dependency\Dependency;
 use Others\dependency\DepEnum;
+use Others\dependency\Dependency;
 
-class Dashboard extends View
-{
+class DataTables extends View {
 
 
     public function __construct()
@@ -21,7 +19,7 @@ class Dashboard extends View
         <div class="content-wrapper">
             <div class="card m-2 mt-2" style="top:0.8rem">
                 <div class="card-body text-center">
-                    <h1>Bienvenue !</h1>
+                    <h1>Custumer DataTables !</h1>
 
                 </div>
             </div>
@@ -29,4 +27,5 @@ class Dashboard extends View
 
 <?php
     }
+
 }
