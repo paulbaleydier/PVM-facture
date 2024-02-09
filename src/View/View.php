@@ -125,15 +125,15 @@ class View
 
     public function footer()
     {
-    ?>
+        $footer = <<< END
         <footer class="main-footer">
             <strong>Copyright © 2024 PVM-TECH.</strong>
             <div class="float-right d-none d-sm-inline-block">
                 <b>Version</b> 0.0.1
             </div>
         </footer>
-
-    <?php
+        END;
+        return $footer;
     }
 
     public function render()
@@ -161,7 +161,7 @@ class View
 
                 <?php if (static::$sideBar) static::sideBar(); ?>
 
- 
+
                 <!-- <div class="content-wrapper"></div> -->
                 <?php static::contentBody(); ?>
 
