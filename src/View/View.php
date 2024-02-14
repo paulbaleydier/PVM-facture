@@ -23,69 +23,6 @@ class View
     public function sideBar()
     {
 ?>
-        <!-- <aside class="main-sidebar sidebar-dark-primary elevation-4">
-
-            <a href="index.php?controller=Dashboard&view=Dashboard" class="brand-link text-center">
-                <span class="brand-text font-weight-light">PVM-Facture</span>
-            </a>
-
-            <div class="sidebar os-host os-theme-light os-host-overflow os-host-overflow-y os-host-resize-disabled os-host-scrollbar-horizontal-hidden os-host-transition">
-                <div class="os-resize-observer-host observed">
-                    <div class="os-resize-observer" style="left: 0px; right: auto;"></div>
-                </div>
-                <div class="os-size-auto-observer observed" style="height: calc(100% + 1px); float: left;">
-                    <div class="os-resize-observer"></div>
-                </div>
-                <div class="os-content-glue" style="margin: 0px -8px; width: 249px; height: 853px;"></div>
-                <div class="os-padding">
-                    <div class="os-viewport os-viewport-native-scrollbars-invisible" style="overflow-y: scroll;">
-                        <div class="os-content" style="padding: 0px 8px; height: 100%; width: 100%;">
-
-                            <div class="user-panel mt-3 pb-3 mb-3 d-flex justify-content-center">
-                                <div>
-                                    <a href="#" class="d-block"><?php //echo ucfirst($_SESSION["firstName"]) . " " . ucfirst($_SESSION["lastName"]) 
-                                                                ?></a>
-                                </div>
-                            </div>
-
-                            <nav class="mt-2">
-                                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-
-                                    <li class="nav-item">
-                                        <a href="index.php?controller=custumer&view=DataTables" class="nav-link">
-                                            <i class="nav-icon fas fa-users"></i>
-                                            <p> Client(s) </p>
-                                        </a>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">
-                                            <i class="nav-icon fas fa-file-invoice"></i>
-                                            <p> Factures </p>
-                                        </a>
-                                    </li>
-
-                                </ul>
-                            </nav>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="os-scrollbar os-scrollbar-horizontal os-scrollbar-unusable os-scrollbar-auto-hidden">
-                    <div class="os-scrollbar-track">
-                        <div class="os-scrollbar-handle" style="width: 100%; transform: translate(0px, 0px);"></div>
-                    </div>
-                </div>
-                <div class="os-scrollbar os-scrollbar-vertical os-scrollbar-auto-hidden">
-                    <div class="os-scrollbar-track">
-                        <div class="os-scrollbar-handle" style="height: 62.8403%; transform: translate(0px, 0px);"></div>
-                    </div>
-                </div>
-                <div class="os-scrollbar-corner"></div>
-            </div>
-
-        </aside> -->
-
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="index.php?controller=Dashboard&view=Dashboard" class="brand-link text-center">
@@ -114,7 +51,7 @@ class View
                         </li>
 
                         <li class="nav-item">
-                            <a href="index.php?controller=Receipt&view=Receipt" class="nav-link">
+                            <a href="index.php?controller=Receipt&view=DataTables" class="nav-link">
                                 <i class="nav-icon fas fa-file-invoice"></i>
                                 <p> Factures </p>
                             </a>
@@ -138,7 +75,7 @@ class View
 
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                    <a class="nav-link" onclick="history.back();"><i class="fa-solid fa-arrow-left-long"></i></a>
                 </li>
 
             </ul>

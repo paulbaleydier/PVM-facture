@@ -5,11 +5,6 @@ namespace Others\dependency;
 class DepEnum {
 
 
-    /**
-     * 
-     * NODE_MODULES
-     * 
-     */
     
     const JQUERY = [
         "css" => [
@@ -63,8 +58,8 @@ class DepEnum {
 
 
     const FONTAWESOME = [
-        "css" => ["plugin/fontawesome-free-6.5.1/css/all.min.css"],
-        "js" => ["plugin/fontawesome-free-6.5.1/js/all.min.js"]
+        "css" => ["plugins/fontawesome-free-6.5.1/css/all.min.css"],
+        "js" => ["plugins/fontawesome-free-6.5.1/js/all.min.js"]
     ];
 
     
@@ -72,6 +67,25 @@ class DepEnum {
     const ICHECK_BOOTSTRAP = [
         "css" => ["vendor/almasaeed2010/adminlte/plugins/icheck-bootstrap/icheck-bootstrap.min.css"],
         "js" => []
+    ];
+
+    const DATATABLESJS = [
+        "css" => [
+            "plugins/DataTables/datatables.min.css"
+        ],
+        "js" => [
+            "plugins/DataTables/datatables.min.js"
+        ]
+    ];
+
+    const SELECT2 = [
+        "css" => [
+            "vendor/almasaeed2010/adminlte/plugins/select2/css/select2.min.css",
+            "vendor/almasaeed2010/adminlte/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css"
+        ],
+        "js" => [
+            "vendor/almasaeed2010/adminlte/plugins/select2/js/select2.min.js"
+        ]
     ];
 
   
